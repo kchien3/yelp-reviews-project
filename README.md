@@ -1,10 +1,10 @@
 See my notebook "yelp-reviews-project.ipynb" for now.
 
-# Automated Moderation
-**Identifying Toxic Comments**
+# Automated Crowdturfing
+**Generating Realistic Reviews**
 
 ## Andrew Kin-Yip Chien
-[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](https://github.com/kchien3/toxic-comments-project/blob/master/presentation/toxic_comments_project-slides.pdf)
+[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](https://github.com/kchien3/yelp-reviews-project/blob/master/presentation/yelp_reviews_project-slides.pdf)
 
 ## Table of Contents
 
