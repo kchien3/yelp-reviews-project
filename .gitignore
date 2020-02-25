@@ -1,5 +1,5 @@
 # tensorflow checkpoints
-notebooks/training_checkpoints/
+*/notebooks/training_checkpoints/
 
 # pickle files
 *.joblib
