@@ -169,13 +169,13 @@ Various model algorithms were explored to create classifiers to determine review
 Some characteristics of machine authored and human authored reviews were analyzed and are presented here.  
 
 <div align='center'>
-<img src='real_fake_sent_len.png'>
+<img src='img/real_fake_sent_len.png'>
 </div>
 The distributions of sentence lengths within human and machine authored reviews are similar but there is a clear visual difference to the eye. This may be a weakness of the model that text classifiers can exploit.  
 
 <br><br>
 <div align='center'>
-<img src='real_fake_char_count.png'>
+<img src='img/real_fake_char_count.png'>
 </div>
 The distribution of character counts within human and machine authored reviews look nearly identical to the eye, but there is a slight difference attributable to the temperature setting used in the text generating model. This detectable difference may be a weakness of the model that text classifiers can exploit.
 
