@@ -20,8 +20,11 @@ See my notebook "yelp-reviews-project.ipynb" for now.
 
 ## Background and Motivation
 [82%](www.brightlocal.com/research/local-consumer-review-survey) of consumers read online reviews for local businesses.  
+<br>
 [76%](www.brightlocal.com/research/local-consumer-review-survey) of consumers trust online reviews as much as recommendations from family and friends.  
+<br>
 A one-star increase in yelp rating leads to a [5-9%](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233) increase in revenue.  
+<br>
 Having good online reviews is vital for business success. Because it can be difficult to implement organizational changes that lead to good reviews, like investing in decor, training and the product (eg. food), an easier route to good reviews is 'crowdturfing,' or hiring people to write good reviews for services they never received. This project explores automated crowdturfing -- training a neural network to generate positive reviews for businesses, as well as methods to detect generated reviews.
 
 ## Data
