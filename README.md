@@ -179,6 +179,20 @@ The distributions of sentence lengths within human and machine authored reviews 
 </div>
 The distribution of character counts within human and machine authored reviews look nearly identical to the eye, but there is a slight difference attributable to the temperature setting used in the text generating model. This detectable difference may be a weakness of the model that text classifiers can exploit.
 
+### Model Comparison
+
+| Model     | Tokens | Accuracy |
+|-----------|--------|:--------:|
+| LightGBM  | char   |    0.770 |
+| LightGBM  | word   |    0.844 |
+| Swivel NN | word   |    0.997 |
+
+### LightGBM Gradient-Boosting (character tokens)
+
+### LightGBM Gradient-Boosting (word tokens)
+
+### Multilayer Perceptron with pre-trained embeddings
+
 ## References
 * Murphy, Rosie. “Local Consumer Review Survey: Online Reviews Statistics & Trends.” BrightLocal, 28 Jan. 2020, www.brightlocal.com/research/local-consumer-review-survey.
 * Luca, Michael. "[Reviews, Reputation, and Revenue: The Case of Yelp.com](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233)." Harvard Business School Working Paper, No. 12-016, September 2011. (Revised March 2016. Revise and resubmit at the American Economic Journal - Applied Economics.)
