@@ -249,7 +249,8 @@ For the purposes of crowdturfing, this review highlights areas of excellence:
 as well as areas for improvement:  
 'they don't have a blood ball sodas for everyone'
 
-The author's colleague operates a cafe:
+
+The author's friend operates a cafe:
 ```
 Seed sequence: The Americano at Chul's was amazing!
 
