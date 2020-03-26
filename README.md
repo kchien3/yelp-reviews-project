@@ -245,6 +245,7 @@ For the purposes of crowdturfing, this review highlights areas of excellence:
 'good prices'  
 'the meat is amazing'  
 'enjoyed the chicken'  
+
 as well as areas for improvement:  
 'they don't have a blood ball sodas for everyone'
 
@@ -257,7 +258,7 @@ I of course I would say that it is a half mix and got a free meal and helpful. T
 For the purposes of crowdturfing, this review highlights unique aspects of the cafe:  
 'The waitress was a giant chocolate and salmon menu'  
 
-as well as areas of excellence:
+as well as areas of excellence:  
 'They are fantastic and friendly and helpful'
 
 ## Future Directions
