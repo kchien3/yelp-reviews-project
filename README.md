@@ -281,9 +281,9 @@ The author's fictional Italian restaurant:
 Seed sequence: Kin-Yip's Italian is amazing!
 
  -- good prices... which is a big fan of sushi rice, which turned out to be a pretty 
- place for the day. I thought it would have to say I enjoy the hostess that do not 
- come back again and show good friends and for a friend who wants to be a party of How 
- Clean food management… I would say I have seated at a bar scanned...
+place for the day. I thought it would have to say I enjoy the hostess that do not 
+come back again and show good friends and for a friend who wants to be a party of How 
+Clean food management… I would say I have seated at a bar scanned...
 When you can say possibly the same for the same time with a bar area, as well as the 
 meat is amazing!  So many people try to sell in the restaurant. I enjoyed the chicken, 
 several milkettes will discover a pastry bath loan options (so you can easily find 
