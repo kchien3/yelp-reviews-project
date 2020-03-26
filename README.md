@@ -1,5 +1,3 @@
-See my notebook "yelp-reviews-project.ipynb" for now.
-
 # Automated Crowdturfing
 **Generating Realistic Reviews**
 
@@ -268,6 +266,7 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 The 'KerasLayer' is the pre-trained embedding layer that transforms words into a 20-dimensional numeric vector. A further 16 node dense layer is added after the embedding layer to allow non-linear features to be generated from words that may be useful for the classification task, which is performed by the 1 node output layer.  
+
 This neural network classifier achieves 99.7% accuracy in determining review authorship.
 
 ## Conclusions
