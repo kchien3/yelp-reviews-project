@@ -2,7 +2,7 @@
 **Generating Realistic Reviews**
 
 ## Andrew Kin-Yip Chien
-[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](https://github.com/kchien3/yelp-reviews-project/blob/master/presentation/yelp_reviews_project-slides.pdf)
+[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/5-star%20Reviews.pdf)
 
 ## Table of Contents
 
