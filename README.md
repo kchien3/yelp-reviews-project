@@ -234,6 +234,7 @@ This project was concluded at this point, with the result being that the text ge
 
 I provide here some more generated reviews for the reader's amusement (the seed sequence gets the model 'on topic' though this text generation model has not gained the ability to stay on topic):  
 
+### Italian Restaurant Review
 The author's fictional Italian restaurant:
 ```
 Seed sequence: Kin-Yip's Italian is amazing!
@@ -249,7 +250,7 @@ For the purposes of crowdturfing, this review highlights areas of excellence:
 as well as areas for improvement:  
 'they don't have a blood ball sodas for everyone'
 
-
+### Cafe Review
 The author's friend operates a cafe:
 ```
 Seed sequence: The Americano at Chul's was amazing!
