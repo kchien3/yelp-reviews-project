@@ -84,6 +84,7 @@ Everything was clean and prepared.  I was here twice in the area and had a big m
 
 #### Deep GRU with Droput RNN
 GRU cells are a simplified variant of LSTM that can model long term sequence dependencies with faster training speeds. This RNN is 'deep' because it contains three hidden layers. The deep GRU with droput model contains an input layer that accepts 100 character length sequences, an embedding layer that creates 256 features from the input layer, 2 recurrent layers with 512 nodes each and node dropout after each layer as a form of regularization, and an output layer with nodes corresponding to unique characters in the training corpus.  
+
 Memory constraints limited the size of the recurrent layers to 512 nodes each rather than 1024.  
 
 The Tensorflow model architecture is reproduced below:
@@ -202,9 +203,14 @@ A classifier trained on word tokens achieved 84.4% accuracy in determining revie
 An examination of the feature importances from this classifier reveal that the text generation model differs from humans in its usage of conjunctions, and I also observed that it wrote the word 'strip' a lot. The text generator writes 'strip' a lot because the training corpus of reviews contained a lot of Las Vegas businesses, and 'strip' here is a reference to the Las Vegas Strip.
 
 ### Multilayer Perceptron with pre-trained embeddings
-A feed-forward artificial neural network with fully connected layers (aka multilayer perceptron) was built with a pre-trained word embedding layer. Word embeddings convert words into numeric vectors such that words that are 'similar' have similar coordinates, and mathetical operations on words produce some intuitive results (e.g. King - Man + Woman = Queen.) The specific embedding algorithm used here is Swivel, which calculates word similarity based on the co-occurence of words (how often pairs of words appear together) and uses sharding to break up the massive matrices used for computation into smaller sub-matrices that are easier for computers to manipulate. Neural networks require a lot of data and time to train. Using pre-trained embeddings allows us to avoid reproducing the computational work done by Google (which would not be feasible given the time and resource limitations of this author.)  
+A feed-forward artificial neural network with fully connected layers (aka multilayer perceptron) was built with a pre-trained word embedding layer. Word embeddings convert words into numeric vectors such that words that are 'similar' have similar coordinates, and mathetical operations on words produce some intuitive results (e.g. King - Man + Woman = Queen.)  
+
+The specific embedding algorithm used here is Swivel, which calculates word similarity based on the co-occurence of words (how often pairs of words appear together) and uses sharding to break up the massive matrices used for computation into smaller sub-matrices that are easier for computers to manipulate.  
+
+Neural networks require a lot of data and time to train. Using pre-trained embeddings allows us to avoid reproducing the computational work done by Google (which would not be feasible given the time and resource limitations of this author.)  
 
 The Tensorflow model architecture is reproduced below:
+```
 Model: "sequential_3"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -219,7 +225,7 @@ Total params: 389,733
 Trainable params: 389,733
 Non-trainable params: 0
 _________________________________________________________________
-
+```
 The 'KerasLayer' is the pre-trained embedding layer that transforms words into a 20-dimensional numeric vector. A further 16 node dense layer is added after the embedding layer to allow non-linear features to be generated from words that may be useful for the classification task, which is performed by the 1 node output layer.  
 This neural network classifier achieves 99.7% accuracy in determining review authorship.
 
