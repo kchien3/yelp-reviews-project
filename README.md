@@ -314,6 +314,8 @@ as well as areas of excellence:
 *'They are fantastic and friendly and helpful'*
 
 ## Future Directions
+* Create a word-level text generator.
+* Pair a text generator with a text classifier in a generative adversarial network (GAN.)
 
 ## References
 * Murphy, Rosie. “Local Consumer Review Survey: Online Reviews Statistics & Trends.” BrightLocal, 28 Jan. 2020, www.brightlocal.com/research/local-consumer-review-survey.
