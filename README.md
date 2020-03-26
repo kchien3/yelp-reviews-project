@@ -30,6 +30,8 @@ Having good online reviews is vital for business success. Because it can be diff
 ### Description
 Yelp provides [over 15 million user reviews](https://www.yelp.com/dataset) on their website for anybody to explore. In this project, various subsets of reviews are used for different investigations, with the size of subsets varying due to computational considerations.
 
+The highlight of this project is a text generator model, and the training set for that model consisted of 2.7 million characters drawn from 5-star yelp reviews.
+
 A neural network model was used to generate a corpus of review text consisting of approximately 2.8 million characters (500,000 words) and was used as part of the training set for building classifiers
 
 ## Exploration
@@ -187,11 +189,72 @@ The distribution of character counts within human and machine authored reviews l
 | LightGBM  | word   |    0.844 |
 | Swivel NN | word   |    0.997 |
 
+Classifiers using the LightGBM implementation of gradient boosting were trained on a data set consisting of positive human authored reviews and machine authored reviews. 
+
 ### LightGBM Gradient-Boosting (character tokens)
+A classifier trained on character tokens achieved 77% accuracy in determining review authorship. 
 
 ### LightGBM Gradient-Boosting (word tokens)
+A classifier trained on word tokens achieved 84.4% accuracy in determining review authorship. 
+<div align='center'>
+<img src='img/lightgbm_features.png'>
+</div>
+An examination of the feature importances from this classifier reveal that the text generation model differs from humans in its usage of conjunctions, and I also observed that it wrote the word 'strip' a lot. The text generator writes 'strip' a lot because the training corpus of reviews contained a lot of Las Vegas businesses, and 'strip' here is a reference to the Las Vegas Strip.
 
 ### Multilayer Perceptron with pre-trained embeddings
+A feed-forward artificial neural network with fully connected layers (aka multilayer perceptron) was built with a pre-trained word embedding layer. Word embeddings convert words into numeric vectors such that words that are 'similar' have similar coordinates, and mathetical operations on words produce some intuitive results (e.g. King - Man + Woman = Queen.) The specific embedding algorithm used here is Swivel, which calculates word similarity based on the co-occurence of words (how often pairs of words appear together) and uses sharding to break up the massive matrices used for computation into smaller sub-matrices that are easier for computers to manipulate. Neural networks require a lot of data and time to train. Using pre-trained embeddings allows us to avoid reproducing the computational work done by Google (which would not be feasible given the time and resource limitations of this author.)  
+
+The Tensorflow model architecture is reproduced below:
+Model: "sequential_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+keras_layer_4 (KerasLayer)   (None, 20)                389380    
+_________________________________________________________________
+dense_6 (Dense)              (None, 16)                336       
+_________________________________________________________________
+dense_7 (Dense)              (None, 1)                 17        
+=================================================================
+Total params: 389,733
+Trainable params: 389,733
+Non-trainable params: 0
+_________________________________________________________________
+
+The 'KerasLayer' is the pre-trained embedding layer that transforms words into a 20-dimensional numeric vector. A further 16 node dense layer is added after the embedding layer to allow non-linear features to be generated from words that may be useful for the classification task, which is performed by the 1 node output layer.  
+This neural network classifier achieves 99.7% accuracy in determining review authorship.
+
+## Conclusions
+This project was concluded at this point, with the result being that the text generator model performed poorly at fooling various text classifiers. I would like to highlight that it is very impressive that the text generator has learned to spell words correctly, use punctuation and capitalization, and produce grammatical (if nonsensical) sentences, given the small training corpus (2.7 million characters consisting of 5-star yelp reviews.)
+
+I provide here some more generated reviews for the reader's amusement (the seed sequence gets the model 'on topic' though this text generation model has not gained the ability to stay on topic):  
+
+The author's fictional Italian restaurant:
+```
+Seed sequence: Kin-Yip's Italian is amazing!
+
+ -- good prices... which is a big fan of sushi rice, which turned out to be a pretty place for the day. I thought it would have to say I enjoy the hostess that do not come back again and show good friends and for a friend who wants to be a party of How Clean food management… I would say I have seated at a bar scanned...
+When you can say possibly the same for the same time with a bar area, as well as the meat is amazing!  So many people try to sell in the restaurant. I enjoyed the chicken, several milkettes will discover a pastry bath loan options (so you can easily find the sliders and honestly, they don't have a blood ball sodas for everyone.
+```
+For the purposes of crowdturfing, this review highlights areas of excellence:  
+'good prices'  
+'the meat is amazing'  
+'enjoyed the chicken'  
+as well as areas for improvement:  
+'they don't have a blood ball sodas for everyone'
+
+The author's colleague operates a cafe:
+```
+Seed sequence: The Americano at Chul's was amazing!
+
+I of course I would say that it is a half mix and got a free meal and helpful. The waitress was a giant chocolate and salmon menu. They are fantastic and friendly and helpful.  The musical was the perfect temperature to what you pay for it.  You can advertise in the past trying to get a drink.
+```
+For the purposes of crowdturfing, this review highlights unique aspects of the cafe:  
+'The waitress was a giant chocolate and salmon menu'  
+
+as well as areas of excellence:
+'They are fantastic and friendly and helpful'
+
+## Future Directions
 
 ## References
 * Murphy, Rosie. “Local Consumer Review Survey: Online Reviews Statistics & Trends.” BrightLocal, 28 Jan. 2020, www.brightlocal.com/research/local-consumer-review-survey.
