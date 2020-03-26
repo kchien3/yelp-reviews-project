@@ -27,9 +27,9 @@
 * [References](#references)
 
 ## Background and Motivation
-[82%](www.brightlocal.com/research/local-consumer-review-survey) of consumers read online reviews for local businesses.  
+[82%](https://www.brightlocal.com/research/local-consumer-review-survey) of consumers read online reviews for local businesses.  
 <br>
-[76%](www.brightlocal.com/research/local-consumer-review-survey) of consumers trust online reviews as much as recommendations from family and friends.  
+[76%](https://www.brightlocal.com/research/local-consumer-review-survey) of consumers trust online reviews as much as recommendations from family and friends.  
 <br>
 A one-star increase in yelp rating leads to a [5-9%](https://www.hbs.edu/faculty/Pages/item.aspx?num=41233) increase in revenue.  
 <br>
