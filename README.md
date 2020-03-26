@@ -290,12 +290,12 @@ several milkettes will discover a pastry bath loan options (so you can easily fi
 the sliders and honestly, they don't have a blood ball sodas for everyone.
 ```
 For the purposes of crowdturfing, this review highlights areas of excellence:  
-'good prices'  
-'the meat is amazing'  
-'enjoyed the chicken'  
+*'good prices'*  
+*'the meat is amazing'*  
+*'enjoyed the chicken'*  
 
 as well as areas for improvement:  
-'they don't have a blood ball sodas for everyone'
+*'they don't have a blood ball sodas for everyone'*
 
 ### Cafe Review
 The author's friend operates a cafe:
@@ -308,10 +308,10 @@ helpful.  The musical was the perfect temperature to what you pay for it.  You c
 advertise in the past trying to get a drink.
 ```
 For the purposes of crowdturfing, this review highlights unique aspects of the cafe:  
-'The waitress was a giant chocolate and salmon menu'  
+*'The waitress was a giant chocolate and salmon menu'*  
 
 as well as areas of excellence:  
-'They are fantastic and friendly and helpful'
+*'They are fantastic and friendly and helpful'*
 
 ## Future Directions
 
