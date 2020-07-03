@@ -2,7 +2,7 @@
 **Generating Realistic Reviews**
 
 ## Kin-Yip Chien
-[Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/5-star%20Reviews.pdf)
+[Linkedin](https://www.linkedin.com/in/kinyip-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/5-star%20Reviews.pdf)
 
 ## Table of Contents
 
