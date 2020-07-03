@@ -1,7 +1,7 @@
 # Automated Crowdturfing
 **Generating Realistic Reviews**
 
-## Andrew Kin-Yip Chien
+## Kin-Yip Chien
 [Linkedin](https://www.linkedin.com/in/andrew-k-chien/) | [Github](https://github.com/kchien3) | [Slides](/presentation/5-star%20Reviews.pdf)
 
 ## Table of Contents
