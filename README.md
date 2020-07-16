@@ -1,4 +1,4 @@
-<img src='img/robot-typing-cc.jpg'></img>
+<img src='img/robot-typing-cc.jpg'>
 
 # Automated Crowdturfing
 **Generating Realistic Reviews**
